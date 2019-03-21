@@ -1,0 +1,46 @@
+
+body{
+    background-color:#B0E0E6;
+    
+}
+
+.container{
+     background-color: #E0FFFF;
+     
+}
+
+.container h1{
+    text-align: center;
+    padding: auto; 
+    font-size: 4.5vw;
+}
+
+form{
+    margin:1%;
+}
+
+form label{
+    margin: 1%;
+}
+
+
+
+@media(max-width:600px){
+    .container{
+        margin-right:27%;
+    }
+
+    .container h1{
+        font-size: 6vw;
+    }
+
+    form{
+        margin:1%;
+    }
+    
+    form label{
+        margin: 1%;
+    }
+    
+   
+}
