@@ -1,17 +1,22 @@
 <form action="" method="post"> 
-
-        <label id="cidade" for="">cidade:
-            <input type="text" name="cidade" id="" placeholder= "Insira sua cidade">
-        </label>
     
-            
-        <label for="">Bairro:
-            <input type="text" name="bairro" id="" placeholder= "Insira seu bairro">
-        </label>
-    
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label id="cidade" for="">Cidade:
+                <input type="text" name="cidade" class="form-control input1" id="" placeholder= "Insira sua cidade">
+            </label>
+        </div>
+         
+        <div class="form-group cool-md-6">      
+            <label for="">Bairro:
+                <input type="text" name="bairro" class="form-control input1" id="" placeholder= "Insira seu bairro">
+            </label>
+        </div>
+    </div> 
 
+    <div class="form-group">
         <label for="">Dia:
-            <select name="dia">
+            <select name="dia" class="form-control">
                 <option value="" selected></option>
                 <option value="Domingo">Domingo</option>
                 <option value="Segunda">Segunda</option>
@@ -22,17 +27,21 @@
                 <option value="Sabado">Sábado</option>
             </select>
         </label>
-
-    <label for="">Hora:
-        <select name="horario" id="">
-                <option value="" selected></option>  
-            <?php foreach ($horarios as $key => $value) : ?>
-                <option value="<?php echo $value['horario']; ?>"><?php echo $value['horario']; ?></option>
-            <?php endforeach; ?>
-        </select>
-    </label> 
-
-    <input type="submit" value="Buscar">
+    </div>        
 
 
+    <div class="form-group">        
+        <label for="">Hora:
+            <select name="horario" id="" class="form-control">
+                    <option value="" selected></option>  
+                <?php foreach ($horarios as $key => $value) : ?>
+                    <option value="<?php echo $value['horario']; ?>"><?php echo $value['horario']; ?></option>
+                <?php endforeach; ?>
+            </select>
+        </label> 
+    </div>
+
+        <input type="submit" value="Buscar">
+
+    
 </form>

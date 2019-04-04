@@ -1,46 +1,24 @@
-
-body{
-    background-color:#B0E0E6;
+input[type=text]{
+    width: 550px;
     
 }
 
-.container{
-     background-color: #E0FFFF;
-     
-}
+/*(telefones em modo paisagem, com até 576px)*/
+@media (max-width: 576px) { 
 
-.container h1{
-    text-align: center;
-    padding: auto; 
-    font-size: 4.5vw;
-}
-
-form{
-    margin:1%;
-}
-
-form label{
-    margin: 1%;
-}
-
-
-
-@media(max-width:600px){
-    .container{
-        margin-right:27%;
-    }
-
-    .container h1{
-        font-size: 6vw;
-    }
-
-    form{
-        margin:1%;
+    input[type=text]{
+        width: 320px;
+        
     }
     
-    form label{
-        margin: 1%;
-    }
-    
-   
-}
+
+ }
+
+/*(tablets com até 768px)*/
+@media (max-width: 768px) {  }
+
+/*(desktops com até 992px)*/
+@media (max-width: 992px) {  }
+
+/*(desktops grandes com até 1200px)*/
+@media (max-width: 1200px) {  }
