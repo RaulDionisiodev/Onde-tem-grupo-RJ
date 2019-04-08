@@ -1,24 +1,45 @@
 input[type=text]{
     width: 550px;
-    
+      
 }
+
+#hora{
+   margin-left: 30px; 
+}
+
+input[type=submit]{
+    margin-left: 30px;
+    width: 100px;
+    margin-top: -5px;
+}
+
 
 /*(telefones em modo paisagem, com até 576px)*/
 @media (max-width: 576px) { 
 
     input[type=text]{
-        width: 320px;
-        
+        width: 320px;    
     }
     
+    input[type=submit]{
+        margin: 0 auto ;
+        margin-top: 5px;
+    }
 
  }
 
 /*(tablets com até 768px)*/
-@media (max-width: 768px) {  }
+@media (max-width: 768px) { 
+   
+ }
 
 /*(desktops com até 992px)*/
 @media (max-width: 992px) {  }
 
 /*(desktops grandes com até 1200px)*/
-@media (max-width: 1200px) {  }
+@media (max-width: 1200px) { 
+    input[type=text]{
+        width: 150%;
+         
+    }
+ }
