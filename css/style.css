@@ -13,6 +13,9 @@ input[type=submit]{
     margin-top: 5px;
 }
 
+.tabela-responsiva{
+    display: none;
+}
 
 }
 @media (min-width: 411px) and (max-width: 600px) {
@@ -29,6 +32,10 @@ input[type=submit]{
          width: 100px;
          margin-top: -5px;
      }
+
+     .tabela-responsiva{
+        display: none;
+    }
      
 }
 
