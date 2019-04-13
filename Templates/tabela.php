@@ -1,7 +1,7 @@
 <?php if($exibir_tabela) : ?>
 <table class="table table-hover table-sm" >
 
-<caption>Lista de Grupos de oração</caption>
+<caption class="text-center">Lista de Grupos de oração</caption>
 
     <thead>
         <tr>
@@ -33,6 +33,6 @@
 
 <?php else : ?>
 
-<h3>Não foram encontrados grupos de oração.</h3>
+<h3 class="text-center" >Não foram encontrados grupos de oração.</h3>
 
 <?php endif ?>

@@ -1,5 +1,8 @@
-<footer>
+<footer class="page-footer font-small">
   
- <p>Onde tem grupo - &copy; Copyright 2018 Raul Dionisio <p>
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <a href="https://github.com/rauldionisiodev"> Raul Dionisio</a>
+    </div>
+    
 
 </footer>
