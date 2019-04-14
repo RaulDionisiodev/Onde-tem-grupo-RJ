@@ -36,20 +36,22 @@
             $query .= "horario = '{$_POST['horario']}' AND ";
         }
       
-    }
-        
-        if (empty($_SESSION) && ($_SESSION != $_POST) ) { 
+    
+    }   
+        if (empty($_SESSION) || ($_SESSION != $_POST) ) {
             
             $query = substr($query ,0, strlen($query) - 5); // retira o último " and "
             $grupos = $repositorio->filtrar($query);
             $_SESSION = $_POST;
             unset($_POST);
+         
         }else{
 
             $grupos = $repositorio->buscarGrupos();
             $_SESSION = $query;
 
         }
+      
 
     
 
@@ -63,4 +65,4 @@ if (!empty($grupos)) {
      
     require "Templates/template.php";
 ?>
-<pre><?php //var_dump($query); ?></pre>
+<pre><?php  #echo sizeof($grupos); var_dump($grupo) ?></pre>

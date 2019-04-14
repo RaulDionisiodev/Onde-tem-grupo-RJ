@@ -30,9 +30,36 @@
         </tr>
     </tbody>
 </table>
+        <?php $total_pags = intval(sizeof($grupos) / 10) ?>
 
+
+        <nav aria-label="Paginação dos resulttados">
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+            <a class="page-link" href="index.php" aria-label="Anterior">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            </li>
+
+            <?php for ($i=0; $i <= $total_pags ; $i++) : ?>
+
+            <li class="page-item"><a class="page-link" href="#"><?php echo ($i + 1) ?></a></li>
+           
+            <?php endfor; ?>
+
+            
+            <li class="page-item">
+            <a class="page-link" href="index.php?pagina=<?php echo $total_pags?>" aria-label="Próximo">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Próximo</span>
+            </a>
+            </li>
+        </ul>
+        </nav>
 <?php else : ?>
 
 <h3 class="text-center" >Não foram encontrados grupos de oração.</h3>
 
 <?php endif ?>
+

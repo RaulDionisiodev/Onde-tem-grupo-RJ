@@ -9,9 +9,13 @@
 
         public function buscarGrupos()
         {
+            
+
             $sqlBusca = 'SELECT * FROM grupos';
 
             $resultado = $this->conexao->query($sqlBusca);
+
+            
 
             $grupos = [];
 
