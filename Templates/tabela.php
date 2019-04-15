@@ -30,7 +30,7 @@
         </tr>
     </tbody>
 </table>
-        <?php $total_pags = intval(sizeof($grupos) / 10) ?>
+        <?php $total_pags = intval(sizeof($grupos) / 2) ?>
 
 
         <nav aria-label="Paginação dos resulttados">
@@ -42,9 +42,9 @@
             </a>
             </li>
 
-            <?php for ($i=0; $i <= $total_pags ; $i++) : ?>
+            <?php for ($i=1; $i <= $total_pags ; $i++) : ?>
 
-            <li class="page-item"><a class="page-link" href="#"><?php echo ($i + 1) ?></a></li>
+            <li class="page-item"><a class="page-link" href="index.php?pagina=<?php echo ($i) ?>"><?php echo ($i) ?></a></li>
            
             <?php endfor; ?>
 

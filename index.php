@@ -65,4 +65,4 @@ if (!empty($grupos)) {
      
     require "Templates/template.php";
 ?>
-<pre><?php  #echo sizeof($grupos); var_dump($grupo) ?></pre>
+<pre><?php var_dump($repositorio->paginacao()) ?></pre>

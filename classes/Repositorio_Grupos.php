@@ -9,13 +9,11 @@
 
         public function buscarGrupos()
         {
-            
 
-            $sqlBusca = 'SELECT * FROM grupos';
+           $sqlBusca = "SELECT * FROM grupos";
 
             $resultado = $this->conexao->query($sqlBusca);
 
-            
 
             $grupos = [];
 
@@ -68,7 +66,30 @@
                 }
             return $grupos;  
         }
+
+
+        public function paginacao()
+        {
+          $grupos = $this->buscarGrupos();
+
+          if (isset($_GET['pagina'])) { $pag_atual = $_GET['pagina'];} else {$pag_atual = 0;}
+
+          $pag_atual == 0 ? $limite = $pag_atual + 1 : $limite = $pag_atual * 2;
+          $num_grupos = $pag_atual * 2;
+
+          $pag_atual != 0 ? $x = $pag_atual + 1 : $x = $pag_atual; 
+
+          while ($pag_atual <= $limite) {
+
+            $grupos_para_paginacao[] = $grupos[$x];
+            $pag_atual ++;
+            $x++;
+          }
+          #$grupos_para_paginacao = $grupos;
+          
+
+          return $grupos_para_paginacao;
+        }
     }
     
-
 ?>
