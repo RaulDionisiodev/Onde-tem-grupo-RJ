@@ -30,7 +30,8 @@
         </tr>
     </tbody>
 </table>
-        <?php $total_pags = intval(sizeof($grupos) / 2) ?>
+        <?php $grupos_pags = $repositorio->buscarGrupos(); 
+             $total_pags = ceil(sizeof($grupos_pags) / 10) ?>
 
 
         <nav aria-label="Paginação dos resulttados">

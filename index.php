@@ -12,7 +12,7 @@
    
     if(!empty($_POST)){
         
-         
+
         if (!empty($_POST['cidade'])) {
             
             $query .= "cidade LIKE '%{$_POST['cidade']}%' AND ";
@@ -35,22 +35,26 @@
             
             $query .= "horario = '{$_POST['horario']}' AND ";
         }
+
+        $query = substr($query ,0, strlen($query) - 5); // retira o último " and "
+        $grupos = $repositorio->filtrar($query);
       
     
-    }   
-        if (empty($_SESSION) || ($_SESSION != $_POST) ) {
+    } else { 
+        
+       /* if (!empty($_SESSION) || ($_SESSION != $_POST)) {
             
             $query = substr($query ,0, strlen($query) - 5); // retira o último " and "
             $grupos = $repositorio->filtrar($query);
             $_SESSION = $_POST;
-            unset($_POST);
+            unset($_POST);*/
          
-        }else{
+  #      }else{
 
-            $grupos = $repositorio->buscarGrupos();
+            $grupos = $repositorio->paginacao();
             $_SESSION = $query;
 
-        }
+      }
       
 
     
@@ -63,6 +67,6 @@ if (!empty($grupos)) {
 
      
      
-    require "Templates/template.php";
+ require "Templates/template.php";
 ?>
-<pre><?php var_dump($repositorio->paginacao()) ?></pre>
+<pre><?php?></pre>

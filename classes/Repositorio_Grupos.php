@@ -72,22 +72,21 @@
         {
           $grupos = $this->buscarGrupos();
 
-          if (isset($_GET['pagina'])) { $pag_atual = $_GET['pagina'];} else {$pag_atual = 0;}
+          if (isset($_GET['pagina'])) { $pag_atual = $_GET['pagina'];} else {$pag_atual = 1;}
 
-          $pag_atual == 0 ? $limite = $pag_atual + 1 : $limite = $pag_atual * 2;
-          $num_grupos = $pag_atual * 2;
+          $total_pags = ceil(sizeof($grupos) / 10);
+          $limite = ($pag_atual * 10) - 10;
 
-          $pag_atual != 0 ? $x = $pag_atual + 1 : $x = $pag_atual; 
+            $sqlBusca = "SELECT * FROM grupos LIMIT 10 OFFSET {$limite} ";
 
-          while ($pag_atual <= $limite) {
+            $resultado = $this->conexao->query($sqlBusca);
 
-            $grupos_para_paginacao[] = $grupos[$x];
-            $pag_atual ++;
-            $x++;
+            while ($grupo = $resultado->fetch_object()){ 
+
+            $grupos_para_paginacao[] = $grupo;
+            
           }
-          #$grupos_para_paginacao = $grupos;
-          
-
+           
           return $grupos_para_paginacao;
         }
     }
