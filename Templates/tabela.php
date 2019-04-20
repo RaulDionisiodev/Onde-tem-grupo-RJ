@@ -6,7 +6,7 @@
     <thead>
         <tr>
             <th scope="col">Nome</th>
-            <th scope="col">Paróquia</th>
+            <th class="tabela-responsiva" scope="col">Paróquia</th>
             <th class="tabela-responsiva" scope="col" >Bairro</th>
             <th class="tabela-responsiva" scope="col">Cidade</th>
             <th scope="col" >Dia</th>
@@ -19,7 +19,7 @@
     <tbody>
         <tr socpe="row">
             <td><?php echo $grupo->nome;?></td>
-            <td><?php echo $grupo->paroquia;?></td>
+            <td class="tabela-responsiva" ><?php echo $grupo->paroquia;?></td>
             <td class="tabela-responsiva" ><?php echo $grupo->bairro;?></td>
             <td class="tabela-responsiva" ><?php echo $grupo->cidade;?></td>
             <td><?php echo $grupo->dia;?></td>
