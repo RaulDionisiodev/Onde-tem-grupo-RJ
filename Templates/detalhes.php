@@ -19,6 +19,12 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="description" content="Buscador de grupos de oração no Rio de Janeiro/Brasil">
+    <meta name="keywords" content="Oração, Igreja, RCC, Carismático, Grupo">
+    <meta name="author" content="Raul Dionisio"> 
+    <meta http-equiv="cache-control"   content="no-cache" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <META NAME="ROBOTS" CONTENT="INDEX,NOFOLLOW"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Onde tem Grupo - RJ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
