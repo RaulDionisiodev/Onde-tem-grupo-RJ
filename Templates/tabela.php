@@ -24,7 +24,7 @@
             <td class="tabela-responsiva" ><?php echo $grupo->cidade;?></td>
             <td><?php echo $grupo->dia;?></td>
             <td><?php echo $grupo->horario;?></td>
-            <td><a href="templates/detalhes.php?id=<?php echo $grupo->id; ?>" rel="">Detalhes</a></td>
+            <td><a href="Templates/detalhes.php?id=<?php echo $grupo->id; ?>" rel="">Detalhes</a></td>
 
             <?php endforeach; ?>
         </tr>

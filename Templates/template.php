@@ -25,9 +25,9 @@
                 </div> 
             </div>
 
-            <?php include "templates/formulario.php"; ?>
+            <?php include "Templates/formulario.php"; ?>
 
-            <?php include "templates/tabela.php"; ?>
+            <?php include "Templates/tabela.php"; ?>
 
             <div class="row">
                 <div class="col-sm">
@@ -35,7 +35,7 @@
                 </div> 
             </div>
 
-            <?php include 'templates/footer.php'; ?>
+            <?php include 'Templates/footer.php'; ?>
         </div>
    </div>
    

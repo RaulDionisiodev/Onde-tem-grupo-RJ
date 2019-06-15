@@ -69,4 +69,4 @@ if (!empty($grupos)) {
      
  require "Templates/template.php";
 ?>
-<pre><?php?></pre>
+
