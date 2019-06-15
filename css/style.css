@@ -1,11 +1,9 @@
 *{
     font-family: 'Nunito', sans-serif;
-    /*background-image: url("../img/cristo.jpg");*/
-   
 }
 
 #principal{
-   /* background-color: #c4e4db;*/
+   background-color:#e6f3ff;
     width: 103%;
     padding: 10px;
 }
@@ -42,7 +40,7 @@ input[type=submit]{
 @media (min-width: 411px) and (max-width: 600px) {
 
     input[type=text]{
-        width: 180%;     
+        width: 150%;     
     }
 
     #hora{
@@ -113,7 +111,7 @@ input[type=submit]{
 
 @media (min-width: 901px) and (max-width: 1025px) {
     input[type=text]{
-        width: 210%;
+        width: 190%;
     }
 
     #hora{
@@ -132,7 +130,7 @@ input[type=submit]{
 @media (min-width: 1026px){
 
     input[type=text]{
-        width: 270%;
+       width: 250%;
     }
 
     #hora{

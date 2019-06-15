@@ -18,7 +18,7 @@
 <body>
 
     <div class="container">
-        <div id="principal" class="bg-light">
+        <div id="principal">
             <div class="row">
                 <div class="col-sm">
                     <h1 class="text-center">Encontre seu grupo de oração</h1>
