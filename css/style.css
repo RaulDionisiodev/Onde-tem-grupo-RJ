@@ -1,9 +1,13 @@
+:root{
+    --bg-color:#e6f3ff;
+}
+
 *{
     font-family: 'Nunito', sans-serif;
 }
 
 #principal{
-   background-color:#e6f3ff;
+    background-color: var(--bg-color);
     width: 103%;
     padding: 10px;
 }
@@ -11,6 +15,14 @@
 p{
     font-size: 20px;
     
+}
+
+#pag-detalhes {
+    background-color:var(--bg-color);
+}
+
+#titulo-detalhe{
+    background-color: #d3eaff;
 }
 
 

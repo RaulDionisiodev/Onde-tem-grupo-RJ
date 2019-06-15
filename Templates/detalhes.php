@@ -34,9 +34,9 @@
 </head>
 <body>
 
-    <div class="container text-center detalhes bg-light">
+    <div class="container text-center detalhes" id="pag-detalhes">
     
-        <div class="jumbotron">
+        <div class="jumbotron" id="titulo-detalhe">
             <h1><?php echo $grupo['nome']; ?></h1>
         </div> 
 
