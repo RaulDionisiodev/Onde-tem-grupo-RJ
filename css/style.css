@@ -4,6 +4,7 @@
 
 *{
     font-family: 'Nunito', sans-serif;
+    
 }
 
 #principal{
@@ -31,7 +32,7 @@ p{
   
 
 input[type=text]{
-    width: 160%;
+    width: 140%;
       
 }
 
@@ -52,7 +53,7 @@ input[type=submit]{
 @media (min-width: 411px) and (max-width: 600px) {
 
     input[type=text]{
-        width: 150%;     
+        width: 180%;     
     }
 
     #hora{
@@ -83,7 +84,7 @@ input[type=submit]{
 
     input[type=text]{
         display: inline-block;
-        width: 100%;
+        width: 180%;
           
     }
 
@@ -106,7 +107,7 @@ input[type=submit]{
 
     input[type=text]{
        display: inline-block;
-        width: 130%;
+       width: 200%;
     }
 
     #hora{
@@ -123,7 +124,7 @@ input[type=submit]{
 
 @media (min-width: 901px) and (max-width: 1025px) {
     input[type=text]{
-        width: 190%;
+        width: 210%;
     }
 
     #hora{

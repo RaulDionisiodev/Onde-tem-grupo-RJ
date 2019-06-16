@@ -1,13 +1,13 @@
 <form action="" method="post"> 
     
     <div class="form-row">
-        <div class="form-group col-sm-6">
+        <div class="form-group col-sm-12 col-lg-6">
             <label id="cidade" for="">Cidade:
                 <input type="text" name="cidade" class="form-control" id="" placeholder= "Insira sua cidade">
             </label>
         </div>
          
-        <div class="form-group col-sm-6">      
+        <div class="form-group col-sm-12 col-lg-6">      
             <label for="">Bairro:
                 <input type="text" name="bairro" class="form-control" id="" placeholder= "Insira seu bairro">
             </label>
