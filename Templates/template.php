@@ -8,6 +8,11 @@
     <meta http-equiv="cache-control"   content="no-cache" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-language" content="pt-br" />
+    <meta property="og:url"  content="ondetemgrupo.ga" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title"  content="Encontre seu grupo de oração" />
+    <meta property="og:description" content="Encontre seu grupo de oração e se encontre com Deus" />
+    <meta property="og:image"  content="../img/pray.jpg" />
     <META NAME="ROBOTS" CONTENT="INDEX,NOFOLLOW"> 
     <title>Onde tem Grupo - RJ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
